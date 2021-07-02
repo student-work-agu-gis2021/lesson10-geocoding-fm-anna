@@ -15,6 +15,7 @@ data = None
 data = pd.read_table('shopping_centers.txt',sep = ';', header=None)
 data.index.name = 'id'
 data.columns = ['name','addr']
+
 #TEST COEE
 # Check your input data
 print(data)

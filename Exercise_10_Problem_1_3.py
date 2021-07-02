@@ -114,7 +114,6 @@ params = dict(service='WFS',version='2.0.0',request='GetFeature',
 r = requests.get(url, params=params)
 pop = gpd.GeoDataFrame.from_features(geojson.loads(r.content))
 
-
 #TEST CODE
 # Check your input data
 print("Number of rows:", len(pop))

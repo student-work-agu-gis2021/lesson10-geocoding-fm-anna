@@ -128,6 +128,9 @@ print(pop.head(3))
 join = gpd.sjoin(geodata, pop, how="inner", op="intersects")
 
 # YOUR CODE HERE 11 to report how many people live within 1.5 km distance from each shopping center
+grouped = join.groupby('name')
+for key, group in grouped:
+    print('store: ', key,"\n", 'population:', sum(group['asukkaita']))
 
 # **Reflections:**
 #     
@@ -136,6 +139,6 @@ join = gpd.sjoin(geodata, pop, how="inner", op="intersects")
 # - What was difficult?
 
 # YOUR ANSWER HERE
-#I think the difficulty of all the probems 1-3 is 5. Because I don't know what to do with the text file.
+#I think the difficulty of all the probems 1-3 is 5. Because I don't know what to do with the text file. Geocording was too difficult,so I couldn't understand.
 
 # Well done!

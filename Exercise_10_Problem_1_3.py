@@ -63,6 +63,8 @@ print(geodata.head())
 # Define output filepath
 out_fp = None
 # YOUR CODE HERE 5 to save the output
+out_fp = r"shopping_centers.shp"
+geodata.to_file(out_fp)
 
 # TEST CODE
 # Print info about output file
@@ -130,7 +132,7 @@ join = gpd.sjoin(geodata, pop, how="inner", op="intersects")
 # YOUR CODE HERE 11 to report how many people live within 1.5 km distance from each shopping center
 grouped = join.groupby('name')
 for key, group in grouped:
-    print('store: ', key,"\n", 'population:', sum(group['asukkaita']))
+    print('store: ', key,"\n", 'population:', sum(group['residents']))
 
 # **Reflections:**
 #     

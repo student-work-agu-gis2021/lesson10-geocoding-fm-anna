@@ -1,3 +1,3 @@
-"Tokyu Department Store";"東京都渋谷区道玄坂２−２４−１"
-"Seibu Shibuya Store";"東京都渋谷区宇田川町２１−１"
-"National Azabu";"東京都港区南麻布４−５−２"
+1;Tokyu Department Store;Tokyo Shibuyaku Dougenzaka 2-24-1
+2;Seibu Shibuya Store;Tokyo Shibuyaku Udagawatyo 21-1
+3;National Azabu;Tokyo Minatoku Minamiazabu 4-5-2
